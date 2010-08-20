@@ -1,0 +1,74 @@
+(* Content-type: application/mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 7.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       145,          7]
+NotebookDataLength[      1751,         65]
+NotebookOptionsPosition[      1388,         48]
+NotebookOutlinePosition[      1726,         63]
+CellTagsIndexPosition[      1683,         60]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"sp", "[", "p_", "]"}], " ", ":=", 
+  RowBox[{
+   RowBox[{"PrimePi", "[", 
+    RowBox[{
+     SuperscriptBox["10", "8"], "/", "p"}], "]"}], "-", 
+   RowBox[{"PrimePi", "[", 
+    RowBox[{"p", "-", "1"}], "]"}]}]}]], "Input",
+ CellChangeTimes->{{3.441990345108179*^9, 3.441990415645906*^9}, {
+  3.441990799055954*^9, 3.4419908139587727`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Total", "[", 
+  RowBox[{"sp", " ", "/@", " ", 
+   RowBox[{"Prime", " ", "/@", " ", 
+    RowBox[{"Range", "[", 
+     RowBox[{"PrimePi", "[", 
+      SuperscriptBox["10", "4"], "]"}], "]"}]}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.441990743570862*^9, 3.4419907526991568`*^9}, {
+  3.441990831027193*^9, 3.441990893882181*^9}}],
+
+Cell[BoxData["17427258"], "Output",
+ CellChangeTimes->{3.441991694489805*^9}]
+}, Open  ]]
+},
+WindowSize->{640, 750},
+WindowMargins->{{117, Automatic}, {78, Automatic}},
+FrontEndVersion->"7.0 for Linux x86 (64-bit) (November 11, 2008)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[545, 20, 373, 10, 32, "Input"],
+Cell[CellGroupData[{
+Cell[943, 34, 349, 8, 32, InheritFromParent],
+Cell[1295, 44, 77, 1, 31, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)

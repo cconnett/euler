@@ -1,0 +1,82 @@
+(* Content-type: application/mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 7.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       145,          7]
+NotebookDataLength[      2007,         73]
+NotebookOptionsPosition[      1689,         57]
+NotebookOutlinePosition[      2026,         72]
+CellTagsIndexPosition[      1983,         69]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"Reduce", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"1", "/", "a"}], "\[Equal]", 
+    RowBox[{
+     RowBox[{"1", "/", "p"}], "+", 
+     RowBox[{"1", "/", "q"}], "+", 
+     RowBox[{"1", "/", "r"}]}]}], ",", "a"}], "]"}]], "Input",
+ CellChangeTimes->{{3.443381718217889*^9, 3.443381742578744*^9}, {
+  3.443382100934013*^9, 3.4433821256844177`*^9}, {3.443382162023135*^9, 
+  3.4433821881628513`*^9}, {3.443382257867712*^9, 3.4433822592478027`*^9}, {
+  3.443385085091384*^9, 3.443385112076702*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    RowBox[{"p", " ", "q"}], "+", 
+    RowBox[{"p", " ", "r"}], "+", 
+    RowBox[{"q", " ", "r"}]}], "\[NotEqual]", "0"}], "&&", 
+  RowBox[{"a", "\[Equal]", 
+   FractionBox[
+    RowBox[{"p", " ", "q", " ", "r"}], 
+    RowBox[{
+     RowBox[{"p", " ", "q"}], "+", 
+     RowBox[{"p", " ", "r"}], "+", 
+     RowBox[{"q", " ", "r"}]}]]}], "&&", 
+  RowBox[{
+   RowBox[{"p", " ", "q", " ", "r"}], "\[NotEqual]", "0"}]}]], "Output",
+ CellChangeTimes->{
+  3.443382188917921*^9, 3.443382260872521*^9, {3.44338509238162*^9, 
+   3.443385112450132*^9}}]
+}, Open  ]]
+},
+WindowSize->{640, 750},
+WindowMargins->{{62, Automatic}, {69, Automatic}},
+FrontEndVersion->"7.0 for Linux x86 (64-bit) (November 11, 2008)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[567, 22, 516, 12, 32, "Input"],
+Cell[1086, 36, 587, 18, 46, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)

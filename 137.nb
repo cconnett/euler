@@ -1,0 +1,351 @@
+(* Content-type: application/mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 7.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       145,          7]
+NotebookDataLength[     10212,        342]
+NotebookOptionsPosition[      9022,        299]
+NotebookOutlinePosition[      9360,        314]
+CellTagsIndexPosition[      9317,        311]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"Sum", "[", 
+  RowBox[{
+   RowBox[{
+    SuperscriptBox["x", "i"], " ", 
+    RowBox[{"Fibonacci", "[", "i", "]"}]}], ",", 
+   RowBox[{"{", 
+    RowBox[{"i", ",", "1", ",", "Infinity"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.442440037840022*^9, 3.442440093777914*^9}}],
+
+Cell[BoxData[
+ RowBox[{"-", 
+  FractionBox[
+   RowBox[{"2", " ", 
+    RowBox[{"(", 
+     RowBox[{"5", "+", 
+      SqrtBox["5"]}], ")"}], " ", "x"}], 
+   RowBox[{
+    SqrtBox["5"], " ", 
+    RowBox[{"(", 
+     RowBox[{"1", "+", 
+      SqrtBox["5"], "+", 
+      RowBox[{"2", " ", "x"}]}], ")"}], " ", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"-", "2"}], "+", "x", "+", 
+      RowBox[{
+       SqrtBox["5"], " ", "x"}]}], ")"}]}]]}]], "Output",
+ CellChangeTimes->{3.4424405373212433`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Reduce", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     RowBox[{"-", 
+      FractionBox[
+       RowBox[{"2", " ", 
+        RowBox[{"(", 
+         RowBox[{"5", "+", 
+          SqrtBox["5"]}], ")"}], " ", "x"}], 
+       RowBox[{
+        SqrtBox["5"], " ", 
+        RowBox[{"(", 
+         RowBox[{"1", "+", 
+          SqrtBox["5"], "+", 
+          RowBox[{"2", " ", "x"}]}], ")"}], " ", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"-", "2"}], "+", "x", "+", 
+          RowBox[{
+           SqrtBox["5"], " ", "x"}]}], ")"}]}]]}], "\[Equal]", "n"}], "&&", 
+    RowBox[{"x", ">", "0"}], "&&", 
+    RowBox[{"n", ">", "0"}]}], ",", "x", ",", "Reals"}], "]"}]], "Input",
+ CellChangeTimes->{{3.442440144768425*^9, 3.442440239689682*^9}, {
+  3.4424404129692*^9, 3.442440479157014*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"n", ">", "0"}], "&&", 
+  RowBox[{"x", "\[Equal]", 
+   RowBox[{
+    FractionBox[
+     RowBox[{
+      RowBox[{"-", "1"}], "-", "n"}], 
+     RowBox[{"2", " ", "n"}]], "+", 
+    RowBox[{
+     FractionBox["1", "2"], " ", 
+     SqrtBox[
+      FractionBox[
+       RowBox[{"1", "+", 
+        RowBox[{"2", " ", "n"}], "+", 
+        RowBox[{"5", " ", 
+         SuperscriptBox["n", "2"]}]}], 
+       SuperscriptBox["n", "2"]]]}]}]}]}]], "Output",
+ CellChangeTimes->{{3.4424401751317043`*^9, 3.442440240240572*^9}, {
+  3.442440432448854*^9, 3.442440480201477*^9}}]
+}, Open  ]],
+
+Cell[TextData[{
+ "Here's the example they give of the tenth golden nugget, which occurs at ",
+ StyleBox["n->74049690", "Input"],
+ "."
+}], "Text",
+ CellChangeTimes->{{3.4425619851719103`*^9, 3.4425620441359053`*^9}, {
+  3.4425620807491083`*^9, 3.442562086812866*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Reduce", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     RowBox[{"-", 
+      FractionBox[
+       RowBox[{"2", " ", 
+        RowBox[{"(", 
+         RowBox[{"5", "+", 
+          SqrtBox["5"]}], ")"}], " ", "x"}], 
+       RowBox[{
+        SqrtBox["5"], " ", 
+        RowBox[{"(", 
+         RowBox[{"1", "+", 
+          SqrtBox["5"], "+", 
+          RowBox[{"2", " ", "x"}]}], ")"}], " ", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"-", "2"}], "+", "x", "+", 
+          RowBox[{
+           SqrtBox["5"], " ", "x"}]}], ")"}]}]]}], "\[Equal]", "74049690"}], "&&", 
+    RowBox[{"x", ">", "0"}], "&&", 
+    RowBox[{"n", ">", "0"}]}], ",", "x", ",", "Reals"}], "]"}]], "Input",
+ CellChangeTimes->{{3.4425618421356297`*^9, 3.4425618488360243`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"n", ">", "0"}], "&&", 
+  RowBox[{"x", "\[Equal]", 
+   FractionBox["6765", "10946"]}]}]], "Output",
+ CellChangeTimes->{3.442561850434369*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"1", "+", 
+   RowBox[{"2", "n"}], "+", 
+   RowBox[{"5", 
+    SuperscriptBox["n", "2"]}]}], "/.", 
+  RowBox[{"n", "\[Rule]", "74049690"}]}]], "Input",
+ CellChangeTimes->{{3.4425618922873287`*^9, 3.442561928916566*^9}}],
+
+Cell[BoxData[
+ RowBox[{"Sqrt", "[", "27416783093579881", "]"}]], "Input",
+ CellChangeTimes->{{3.442561942040352*^9, 3.44256194630807*^9}, {
+  3.442602429892206*^9, 3.44260243450931*^9}}],
+
+Cell[BoxData["165580141"], "Output",
+ CellChangeTimes->{3.442561946587208*^9}],
+
+Cell[TextData[{
+ "A searching algorithm would have to evaluate the polynomial ",
+ Cell[BoxData[
+  RowBox[{"1", "+", 
+   RowBox[{"2", "n"}], "+", 
+   RowBox[{"5", 
+    SuperscriptBox["n", "2"]}]}]], "Input",
+  CellChangeTimes->{{3.4425618922873287`*^9, 3.442561928916566*^9}}],
+ " and check if the result is a perfect square.  Alternatively, we would \
+searching over these 'characteristic roots' to find the appropriate ",
+ StyleBox["n", "Input"],
+ " work better?"
+}], "Text",
+ CellChangeTimes->{{3.442562109136771*^9, 3.4425622623057756`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Reduce", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     RowBox[{"1", "+", 
+      RowBox[{"2", "n"}], "+", 
+      RowBox[{"5", 
+       SuperscriptBox["n", "2"]}]}], "\[Equal]", 
+     SuperscriptBox["k", "2"]}], "&&", 
+    RowBox[{"n", ">", "0"}], "&&", 
+    RowBox[{"k", ">", "0"}]}], ",", "n", ",", "Reals"}], "]"}]], "Input",
+ CellChangeTimes->{{3.4425622744542437`*^9, 3.4425623360027523`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"k", ">", "1"}], "&&", 
+  RowBox[{"n", "\[Equal]", 
+   RowBox[{
+    RowBox[{"-", 
+     FractionBox["1", "5"]}], "+", 
+    RowBox[{
+     FractionBox["1", "5"], " ", 
+     SqrtBox[
+      RowBox[{
+       RowBox[{"-", "4"}], "+", 
+       RowBox[{"5", " ", 
+        SuperscriptBox["k", "2"]}]}]]}]}]}]}]], "Output",
+ CellChangeTimes->{{3.442562297194655*^9, 3.4425623369194927`*^9}}]
+}, Open  ]],
+
+Cell[TextData[{
+ "Searching through ",
+ StyleBox["n", "Input"],
+ " entails an evaluation of the polynomial and a perfect square check.  \
+Searching through ",
+ StyleBox["k", "Input"],
+ " entails an evaluation of a different polynomial and an integer root \
+operation.  The ",
+ StyleBox["k", "Input"],
+ "s are also more spread out.  Let's search on ",
+ StyleBox["n", "Input"],
+ "."
+}], "Text",
+ CellChangeTimes->{{3.4426022848406763`*^9, 3.442602412741033*^9}, {
+  3.44260276868119*^9, 3.442602770621943*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"N", "[", 
+  RowBox[{
+   RowBox[{"Ratios", "[", 
+    RowBox[{"{", 
+     RowBox[{
+     "2", ",", "15", ",", "104", ",", "714", ",", "4895", ",", "33552", ",", 
+      "229970", ",", "1576239", ",", "10803704", ",", "74049690", ",", 
+      "507544127", ",", "3478759200"}], "}"}], "]"}], ",", "10"}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.442603009444879*^9, 3.4426030583111687`*^9}, {
+  3.442603150065897*^9, 3.44260316309862*^9}, {3.442603261516739*^9, 
+  3.442603273506195*^9}, {3.442603310114648*^9, 3.442603313555147*^9}, {
+  3.442603407476431*^9, 3.4426034245612717`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+  "7.5`10.", ",", "6.93333333333333333333333333333333333333`10.", ",", 
+   "6.86538461538461538461538461538461538462`10.", ",", 
+   "6.85574229691876750700280112044817927171`10.", ",", 
+   "6.85434116445352400408580183861082737487`10.", ",", 
+   "6.85413686218407248450166905102527420124`10.", ",", 
+   "6.85410705744227507935817715354176631734`10.", ",", 
+   "6.85410270904348896328539009629884808078`10.", ",", 
+   "6.85410207462181488867151488045211160913`10.", ",", 
+   "6.85410198206096473867750155334883913761`10.", ",", 
+   "6.85410196855651922458359960492656828635`10."}], "}"}]], "Output",
+ CellChangeTimes->{3.442603424974725*^9}]
+}, Open  ]],
+
+Cell["\<\
+Approximate this ratio, and iterate the approximation 5 times from the 10th \
+golden nugget to get an approximation for the 15th golden nugget.\
+\>", "Text",
+ CellChangeTimes->{{3.442603750117119*^9, 3.442603789942668*^9}, {
+  3.442603835451952*^9, 3.4426038411094112`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"r", "=", 
+   RowBox[{"6854101", "/", "1000000"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.442603115476389*^9, 3.442603128863963*^9}, {
+  3.442603171319662*^9, 3.4426032032615128`*^9}, {3.4426034328441267`*^9, 
+  3.442603437148157*^9}}],
+
+Cell[BoxData[
+ RowBox[{"Nest", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"Floor", "[", 
+     RowBox[{"r", "*", "#"}], "]"}], "&"}], ",", "74049690", ",", "5"}], "]"}]
+  ], "Input",
+ CellChangeTimes->{{3.4426033181423597`*^9, 3.4426033853176537`*^9}}],
+
+Cell[BoxData["1120148865526"], "Output",
+ CellChangeTimes->{3.44260338806923*^9, 3.442603442693116*^9}],
+
+Cell[TextData[{
+ "A search in ",
+ StyleBox["ghci", "Code"],
+ " starting from that approximation was enough to turn up the 15th golden \
+nugget: ",
+ "1120149658760",
+ "."
+}], "Text",
+ CellChangeTimes->{{3.4426036416701813`*^9, 3.44260369552374*^9}}]
+},
+WindowSize->{640, 750},
+WindowMargins->{{328, Automatic}, {Automatic, 50}},
+FrontEndVersion->"7.0 for Linux x86 (64-bit) (November 11, 2008)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[567, 22, 299, 8, 32, "Input"],
+Cell[869, 32, 490, 18, 61, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1396, 55, 813, 25, 100, "Input"],
+Cell[2212, 82, 587, 19, 56, "Output"]
+}, Open  ]],
+Cell[2814, 104, 266, 6, 31, "Text"],
+Cell[CellGroupData[{
+Cell[3105, 114, 777, 24, 100, "Input"],
+Cell[3885, 140, 175, 5, 46, "Output"]
+}, Open  ]],
+Cell[4075, 148, 251, 7, 32, "Input"],
+Cell[4329, 157, 186, 3, 32, "Input"],
+Cell[4518, 162, 78, 1, 31, "Output"],
+Cell[4599, 165, 544, 13, 71, "Text"],
+Cell[CellGroupData[{
+Cell[5168, 182, 420, 12, 32, "Input"],
+Cell[5591, 196, 412, 14, 46, "Output"]
+}, Open  ]],
+Cell[6018, 213, 508, 14, 71, "Text"],
+Cell[CellGroupData[{
+Cell[6551, 231, 602, 13, 55, "Input"],
+Cell[7156, 246, 680, 13, 72, "Output"]
+}, Open  ]],
+Cell[7851, 262, 284, 5, 51, "Text"],
+Cell[8138, 269, 271, 6, 32, "Input"],
+Cell[8412, 277, 249, 7, 32, InheritFromParent],
+Cell[8664, 286, 103, 1, 31, "Output"],
+Cell[8770, 289, 248, 8, 51, "Text"]
+}
+]
+*)
+
+(* End of internal cache information *)
