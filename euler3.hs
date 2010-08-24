@@ -402,13 +402,37 @@ p134 = sum $ zipWith capS thesePrimes (drop 3 primes)
     where thesePrimes = takeWhile (<=1000000) $ drop 2 primes
 
 --p152
-makeSum :: Rational -> [Integer] -> [[Integer]]
-makeSum s [] = []
-makeSum s denoms
-    | s > (sum $ map ((1%) . (^2)) denoms) = []
-    | otherwise = let (d:ds) = denoms in
-                  map (d:) (makeSum (s - (1%(d^2))) ds) ++
-                  makeSum s ds
+--makeSum :: Integer -> [Integer] -> [[Integer]]
+makeSum target [] _ _ = []
+makeSum target inputs min max
+    | target == 0 = [[]]
+    | target == max = [inputs]
+    | target < min = []
+    | target > max = []
+    | otherwise = let (i:rest) = inputs in
+                  map (i:) (makeSum (target - i) rest min (max-i)) ++
+                  makeSum target rest min (max-i)
+
+top = 45
+d152 = foldl lcm 1 $ map (^2) [2..top]
+n152 = d152 `div` 2
+s'152 = [d152 `div` x | x <- map (^2) [2..top]]
+s152 = (d152 - sum s'152) : s'152
+un152 n = floor $ sqrt $ fromIntegral $ denominator $ n % d152
+p152 = map (map un152) $ makeSum n152 s'152 (last s'152) (sum s'152)
+
+addDenom :: (M.Map Rational Int) -> Int -> (M.Map Rational Int)
+addDenom sums denom = M.unionWith (+) sums $ M.mapKeysWith (+) (+ 1%(fromIntegral $ denom^2)) sums
+initialSums :: M.Map Rational Int
+initialSums = M.fromList [(1%4,1)]
+--Still takes just as long
+--allSums = foldl' addDenom initialSums [3..80]
+
+kmkk [0] = True
+kmkk [_] = False
+kmkk s = kmkk $ (abs $ (\([a,b]) -> a - b) $ take 2 l) : drop 2 l
+    where l = sortBy (comparing negate) s
+
 --p187
 limit187 = 10^8
 {-piArray :: forall (a :: * -> * -> *) t a1.
