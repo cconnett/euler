@@ -419,7 +419,10 @@ n152 = d152 `div` 2
 s'152 = [d152 `div` x | x <- map (^2) [2..top]]
 s152 = (d152 - sum s'152) : s'152
 un152 n = floor $ sqrt $ fromIntegral $ denominator $ n % d152
-p152 = map (map un152) $ makeSum n152 s'152 (last s'152) (sum s'152)
+p152 = map (map un152) $ makeSum n152 normals (last s'152) (sum s'152)
+weirdos = filter ((/=0).(`mod`10000)) s'152
+normals = S.toList $ S.difference (S.fromList s'152) (S.fromList weirdos)
+valids = S.fromList $ filter ((==0) . (`mod`10000)) $ map sum $ powerset weirdos
 
 addDenom :: (M.Map Rational Int) -> Int -> (M.Map Rational Int)
 addDenom sums denom = M.unionWith (+) sums $ M.mapKeysWith (+) (+ 1%(fromIntegral $ denom^2)) sums
